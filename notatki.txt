@@ -1,0 +1,34 @@
+wszystkie kolumny wczytywać i wklepać w jakąś strukturę 
+time before filter i after filter - kolumny
+3 x float
+3 kanały (bloki)
+25pkt było w jakiś sposób uśredniane i dopiero wtedy stanowiłe te wypisane wartości
+duże wartości - 1 bloki
+od 0 do 1033 - 2 blok
+
+
+odczytać poprawnie wartości
+i dla wszystkich plików txt stworzyć strukturę rec (txt->rec)
+
+struct
+long czas
+float bef[760]
+float aft[760]
+
+int to 2bajty w jakimś tam kompilatorze 
+
+wykorzystać funkcje FindFirstFile i NextFile
+1 plik wyjściowy dla jednego wyjściowego
+fwrite
+plik wyjściowy jest binarny więc nie jest odczytywalny
+strukturę zapisuje binarnie i później on to będzie sobie czytać
+fwrite(nazwa struktura(pointer),rozmiar struktury 1, nazwa pliku gdzie plik musi byc otworzony fopen)
+np.
+struct record
+typedef FAR *dF;
+fD FRec[10000]
+FRec[] = new(Record);
+
+char name[] name[strlen(name)-3] =0;
+
+
